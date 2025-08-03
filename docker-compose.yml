@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   app:
-    container_name: SLKTVES
+    container_name: 75
     image: 'oven/bun:1.1.29'
     command: >
       sh -c "
