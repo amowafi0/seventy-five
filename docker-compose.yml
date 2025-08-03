@@ -2,12 +2,12 @@ version: '3.8'
 services:
   app:
     container_name: 75
-    image: 'oven/bun:1.1.29'
+    image: 'node:20-alpine'
     command: >
       sh -c "
-        bun install --production --frozen-lockfile &&
-        bun run build &&
-        bun run start
+        npm install --production --frozen-lockfile &&
+        npm run build &&
+        npm run start
       "
     ports:
       - '8025:3000'
