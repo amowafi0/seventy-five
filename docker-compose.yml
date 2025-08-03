@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  app:
+    container_name: SLKTVES
+    image: 'oven/bun:1.1.29'
+    command: >
+      sh -c "
+        bun install --production --frozen-lockfile &&
+        bun run build &&
+        bun run start
+      "
+    ports:
+      - '8024:3000'
+    volumes:
+      - './:/app'
+    working_dir: /app
+    environment:
+      - NODE_ENV=production
