@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   app:
-    container_name: 75
+    container_name: seventy-five
     image: 'node:20-alpine'
     command: >
       sh -c "
