@@ -2,7 +2,7 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App.tsx';
 import './assets/css/index.css';
-import { BrowserRouter } from 'react-router';
+import { BrowserRouter } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import Header from '@/components/layout/header/Header.tsx';
 import Footer from '@/components/layout/footer/footer.tsx';

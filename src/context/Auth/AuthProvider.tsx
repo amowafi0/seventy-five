@@ -1,6 +1,6 @@
 import { FC, PropsWithChildren, useState } from 'react';
 import { User, AuthContext } from './AuthContext';
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 
 const AuthProvider: FC<PropsWithChildren> = ({ children }) => {
     const [user, setUser] = useState<User | null>(

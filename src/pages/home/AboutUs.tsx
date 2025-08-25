@@ -1,5 +1,5 @@
 import img from '../../assets/img/Screenshot 2024-11-03 230042_upscayl_4x_ultramix_balanced 1.png';
-import { NavLink } from 'react-router';
+import { NavLink } from 'react-router-dom';
 
 function AboutUs() {
     const scrollToTop = () => {

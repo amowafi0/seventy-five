@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router';
+import { Routes, Route } from 'react-router-dom';
 
 import HomePage from '@/pages/home/HomePage.tsx';
 import AboutUs from '@/pages/AboutUs.tsx';

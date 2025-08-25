@@ -8,7 +8,7 @@ import {
 import { Swiper, SwiperSlide, SwiperClass } from 'swiper/react';
 
 import { useRef } from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 function MainSwiper() {
     const swiperRef = useRef<SwiperClass>(null);

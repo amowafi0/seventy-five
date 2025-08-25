@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 import {
     Select,
     SelectContent,
@@ -32,7 +32,7 @@ function RequestService() {
     ];
 
     const [homePick, setHomePick] = useState<boolean>(false);
-    const [date, setDate] = useState<Date>();
+    const [date, setDate] = useState<Date | null>(null);
     const [open, setOpen] = useState(false);
     const methods = useForm();
 

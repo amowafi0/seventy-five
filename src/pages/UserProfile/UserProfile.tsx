@@ -2,7 +2,7 @@ import usericon from '../../assets/img/solar_user-linear.svg';
 import ordericon from '../../assets/img/solar_archive-minimalistic-outline.svg';
 import tracicon from '../../assets/img/solar_compass-big-outline.svg';
 import logouticon from '../../assets/img/solar_logout-outline.svg';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 import Popmane from './PopName.tsx';
 import PopupPassword from './PopPassword.tsx';

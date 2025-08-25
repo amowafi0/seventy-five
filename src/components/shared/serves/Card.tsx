@@ -1,5 +1,5 @@
 import aro from '../../../assets/img/solar_arrow-left-linear.png';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 interface CardProps {
     img: string;

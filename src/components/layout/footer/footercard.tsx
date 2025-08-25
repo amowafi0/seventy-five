@@ -1,5 +1,5 @@
 import maskimg from '../../../assets/img/Mask and img footer.png';
-import { NavLink } from 'react-router';
+import { NavLink } from 'react-router-dom';
 
 function FooterCard() {
     const scrollToTop = () => {

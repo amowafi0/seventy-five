@@ -8,7 +8,7 @@ import x from '../../../assets/img/x.png';
 import instgram from '../../../assets/img/instgram.png';
 import facebook from '../../../assets/img/facebook.png';
 import whatapp from '../../../assets/img/whatsapp.svg';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 function Footer() {
     const scrollToTop = () => {

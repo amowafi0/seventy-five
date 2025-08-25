@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import { Dialog, DialogTrigger } from '@/components/ui/dialog.tsx';
 import { Button } from '@/components/ui/button.tsx';
 import logo from '../../../assets/img/Logo header.png';
