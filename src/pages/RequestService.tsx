@@ -256,14 +256,14 @@ function RequestService() {
                                             </PopoverTrigger>
                                             <PopoverContent className="w-auto p-0">
                                                 <Calendar
-                                                    mode="single"
                                                     selected={date}
                                                     onSelect={(selectedDate) => {
                                                         setDate(selectedDate);
                                                         setOpen(false);
                                                     }}
-                                                    disabled={{ before: new Date() }}
-                                                    initialFocus
+                                                    disabled={false}
+                                                    placeholder="حدد التاريخ"
+                                                    className="p-3"
                                                 />
                                             </PopoverContent>
                                         </Popover>
