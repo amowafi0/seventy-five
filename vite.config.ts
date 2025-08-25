@@ -1,17 +1,3 @@
-// import { defineConfig } from 'vite';
-// import react from '@vitejs/plugin-react';
-// import tailwindcss from '@tailwindcss/vite';
-// import path from 'path';
-// // https://vite.dev/config/
-// export default defineConfig({
-//     plugins: [react(), tailwindcss()],
-//     resolve: {
-//         alias: {
-//             '@': path.resolve(__dirname, './src'),
-//         },
-//     },
-// });
-
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
@@ -26,4 +12,24 @@ export default defineConfig({
         },
     },
     base: '/',
+    publicDir: 'public',
+    server: {
+        port: 5173,
+        host: '0.0.0.0', // Allow external connections
+        watch: {
+            usePolling: true, // Better for Docker on Windows/Mac
+        },
+    },
+    build: {
+        outDir: 'dist',
+        assetsDir: 'assets',
+        rollupOptions: {
+            output: {
+                manualChunks: {
+                    vendor: ['react', 'react-dom'],
+                    mui: ['@mui/material', '@mui/x-date-pickers'],
+                },
+            },
+        },
+    },
 });
