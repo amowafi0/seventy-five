@@ -214,7 +214,10 @@ function RequestService() {
                                         <span className="font-medium">
                                             وقت الاستلام المفضل
                                         </span>
-                                        <Popover open={open} onOpenChange={setOpen}>
+                                        <Popover
+                                            open={open}
+                                            onOpenChange={setOpen}
+                                        >
                                             <PopoverTrigger asChild>
                                                 <Button
                                                     variant={'outline'}
@@ -257,7 +260,9 @@ function RequestService() {
                                             <PopoverContent className="w-auto p-0">
                                                 <Calendar
                                                     selected={date}
-                                                    onSelect={(selectedDate) => {
+                                                    onSelect={(
+                                                        selectedDate
+                                                    ) => {
                                                         setDate(selectedDate);
                                                         setOpen(false);
                                                     }}
